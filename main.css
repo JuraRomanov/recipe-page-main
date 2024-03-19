@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap') ; 
+
+
+
+:root{ 
+    /* colors */
+    --nutmeg : hsl(14 , 45% , 36%)  ; 
+    --dark-raspberry : hsl(332, 51%, 32%) ; 
+    --rose-white : hsl(330, 100%, 98%);
+    --eggshell :hsl(30, 54%, 90%) ;
+    --light-grey  : hsl(30, 18%, 87%);
+    --wenge-brown  :hsl(30, 10%, 34%) ;
+    --dark-charcoal  : hsl(24, 5%, 18%);
+
+    /* Typography */
+
+    --fz-normal  : 16px; 
+    --ff-young-serif : "Young Serif", serif;  
+    --ff-outfit :  "Outfit", sans-serif;
+    --fw-small : 400 ;
+    --fw-normal : 600 ;
+    --fw-bold : 700 ;
+    
+    /* border */
+
+    --radii : 2rem ; 
+}
+
+
+* { 
+    box-sizing: border-box;
+}
+body { 
+    margin: 0;
+    font-family: var(--ff-outfit); 
+    
+    background-color: var(--eggshell);
+    color: var(--wenge-brown) ; 
+}
+
+.content{
+    min-height: 100vh ;
+    max-width: 100vw
+}
+.content__box{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header__image{ 
+    max-width: 100%;    
+
+}
+
+.recipe{ 
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    padding: 1rem;
+}
+
+.recipe__header{ 
+
+}
+
+.recipe__title{
+    font-family: var(--ff-young-serif);
+    font-size: 32px;
+    margin: 0;
+    color: var(--dark-charcoal) ; 
+
+}
+.recipe__description{ 
+    font-size: 19px;
+    color: var(--wenge-brown) ; 
+}
+
+.recipe__preparation-time{ 
+    background-color: var(--rose-white);
+    border-radius: var(--radii);
+    padding: 1rem;
+}
+
+.preparation-time__title{ 
+    color : var(--dark-raspberry); 
+    margin: 0;
+    font-size: 17px;
+}
+.preparation-time__information{ 
+    
+}
+
+.preparation-time__item{ 
+    font-size: 19px;
+}
+.item__name{ 
+    color:var(--dark-charcoal);
+    font-weight: var(--fw-bold);
+}
+.item__details{ 
+    
+}
